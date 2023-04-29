@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browser Developer Tools for Non-Developers - Elemente ändern</title>
+    <title>Browser Developer Tools for Non-Developers - Timed Button</title>
     <link rel="stylesheet" href="../assets/modes.css">
     <link rel="stylesheet" href="../assets/layout.css">
     <style>
@@ -28,9 +28,8 @@
 </head>
 <body>
     <section>
-        <h1>Elemente Demo - Blockierter Knopf</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro ullam iure, in adipisci consequuntur illum sint dicta deserunt, illo neque molestiae doloremque, tenetur ex quos laborum maxime obcaecati quisquam.</p>
-        <button disabled>Bitte 120 Sekunden warten…</button>
+        <h1>Elements demo - blocked button</h1>
+        <button disabled>Please wait 120 seconds</button>
     </section>
     <nav><ul></ul></nav>
     <script src="../assets/nav.js"></script>
@@ -38,20 +37,20 @@
         let but = document.querySelector('button');
         let secs = 120;
         let step = _ => {
-            but.innerText = `Noch ${secs} Sekunde${secs === 1 ? '' : 'n'} warten…`;
+            but.innerText = `Wait ${secs} second${secs === 1 ? '' : 's'} …`;
             secs--;
             if (secs > 0) {
                 window.setTimeout(step, 1000);
             } else {
                 but.disabled = false;
-                but.innerText = 'Download beginnt';
+                but.innerText = 'Starting download';
             }
         }
         window.setTimeout(step, 1000);
         but.addEventListener('click', e => {
             e.preventDefault();
             secs = 0;
-            but.innerText = 'Download beginnt';
+            but.innerText = 'Starting download';
         })
     </script>
 </body>

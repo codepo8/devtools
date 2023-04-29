@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brower Entwicklerwerkzeuge - Das Netzwerk</title>
+    <title>Browser Developer Tools for Non-Developers - Console</title>
     <link rel="stylesheet" href="../assets/modes.css">
     <link rel="stylesheet" href="../assets/layout.css">
     <style>
@@ -71,17 +71,17 @@
 </head>
 <body>
     <details>
-        <summary>Scriptbeispiele</summary>
+        <summary>Script examples:</summary>
         <ul>
-            <li>Alle Bilder: <button type="button">$$('img')</button></li>
-            <li>Adresse und Alternativtext von Bildern: <button>console.table($$('img'),['src', 'alt'])</button></li>
-            <li>Alle Bilder ohne Alternativtext: <button>$$('img').filter(i => i.alt === '').map(i => i.src)</button></li>
-            <li>Alle Links: <button type="button">$$('a')</button></li>
-            <li>Alle internen links: <button type="button">$$('a').filter(l => l.href.endsWith('#'))</button></li>
-            <li>Alle Bilder Links: <button type="button">$$('.full-link')</button></li>
-            <li>Alle Bilder URLs: <button type="button">$$('.full-link').map(i => i.href)</button></li>
-            <li>Alle Bilder URLs als Text: <button type="button">$$('.full-link').map(i => i.href).join("\n")</button></li>
-            <li>Alle Bilder URLs in die Zwischenablage <button type="button">copy($$('.full-link').map(i => i.href).join("\n"))</button></li>
+            <li>Get all images: <button type="button">$$('img')</button></li>
+            <li>Get the source and alternative text of all images: <button>console.table($$('img'),['src', 'alt'])</button></li>
+            <li>List all images without alternative text: <button>$$('img').filter(i => i.alt === '').map(i => i.src)</button></li>
+            <li>Get all links: <button type="button">$$('a')</button></li>
+            <li>Get all internal links: <button type="button">$$('a').filter(l => l.href.endsWith('#'))</button></li>
+            <li>Get links pointing to full images: <button type="button">$$('.full-link')</button></li>
+            <li>Get the URL of all full images : <button type="button">$$('.full-link').map(i => i.href)</button></li>
+            <li>Get all the image URLs as text: <button type="button">$$('.full-link').map(i => i.href).join("\n")</button></li>
+            <li>Copy all image URLs as text to the clipboard: <button type="button">copy($$('.full-link').map(i => i.href).join("\n"))</button></li>
         </ul>
     </details>
     <ul id="gallery">
@@ -95,7 +95,7 @@
         <li><a class="full-link" href="../img/husky-cuddles.jpg"><img src="../img/husky-cuddles-500px.jpg" loading="lazy" alt="Husky being cuddled"></a></li>
         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
         <li class="more">            
-            <h2>Sinnlose "woanders im web" Links</h2>
+            <h2>Pointless  "elswhere on the web" links</h2>
             <ul class="more">
                 <li><a href="#">Lorem ipsum</a></li>
                 <li><a href="#">Dolor sit amet</a></li>
@@ -111,7 +111,7 @@
         <li class="double">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
         <li><a class="full-link" href="../img/larry-ball.jpg"><img src="../img/larry-ball-500px.jpg" loading="lazy"></a></li>
         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
-        <li class="ad">Hurra Werbung!</li>
+        <li class="ad">Advertising!</li>
         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
         <li><a class="full-link" href="../img/husky-bed.jpg"><img src="../img/husky-bed-500px.jpg" loading="lazy" alt="Husky in bed"></a></li>
         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>

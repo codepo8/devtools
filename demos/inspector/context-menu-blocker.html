@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBrowser Developer Tools for Non-Developers - Rechtsklick Demo</title>
+    <link rel="stylesheet" href="../assets/modes.css">
+    <link rel="stylesheet" href="../assets/layout.css">
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            width: 10em;;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button disabled>Drück mich!</button>
+        <output></output>
+    </section>
+        <nav><ul></ul></nav>
+        
+    <script src="../assets/nav.js"></script>
+    <script>
+        document.addEventListener('contextmenu', e => {
+            alert('KOPIERGESCHÜTZTE INHALTE!')
+            e.preventDefault();
+        })
+        document.querySelector('button').addEventListener('click', e => {
+            document.querySelector('output').innerText = 'Sie haben einen einfachen Knopf sehr glücklich gemacht!';
+        })
+    </script>
+</body>
+</html>

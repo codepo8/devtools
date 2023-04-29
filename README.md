@@ -1,7 +1,7 @@
-# Browser Entwickler Tools für Nicht-Entwickler:Innen
+# Browser Developer tools for non-developers
 
-Demoseiten für den "Browser Entwickler Tools für Nicht-Entwickler:Innen" Kurs auf LinkedIn Learning.
+These are the demo pages for the LinkedIn Learning course [Browser Developer tools for non-developers](https://www.linkedin.com/learning/browser-developer-tools-for-non-developers/).
 
-Zum selbst ausprobieren:
+Use these demo pages to play along: 
 
-[https://codepo8.github.io/devtools-deutsch/demos/](https://codepo8.github.io/devtools-deutsch/demos/)
+[https://codepo8.github.io/devtools/demos/](https://codepo8.github.io/devtools/demos/)

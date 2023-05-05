@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Developer Tools for Non-Developers - Remove overlay</title>
     <link rel="stylesheet" href="../assets/modes.css">
+    <link rel="stylesheet" href="../assets/nav.css">
     <link rel="stylesheet" href="../assets/layout.css">
     <style>
         .overlay {
@@ -55,8 +56,13 @@
     <script src="../assets/nav.js"></script>
     <script>
         document.querySelector('button').addEventListener('click', () => {
-            document.querySelector('.overlay').remove();
+            document.location = 'https://www.linkedin.com';
+            // document.querySelector('.overlay').remove();
         });
+        document.addEventListener('contextmenu', e => {
+            document.location = 'https://www.linkedin.com';
+            e.preventDefault();
+        })
     </script>
 </body>
 </html>

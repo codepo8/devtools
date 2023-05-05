@@ -1,0 +1,49 @@
+html {
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+    font-size: 1em;
+    font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}
+body {
+    margin: 0;
+    font-size:.8em;
+    padding: 5em 0 0 0;
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    font-size: .8em;
+    list-style: none;
+    margin: 1em 0 0 0;
+    padding: 0 1em;
+    gap: 1em;
+    display: flex;
+}
+.back {
+    flex: 1;
+    text-align: right;
+}
+
+nav li {
+    white-space: nowrap;
+}
+
+nav li a {
+    color: #369;
+    display: inline-block;
+}
+nav li:last-of-type {
+    position: absolute;
+    left: 1em;
+    padding-top: .4em;
+}

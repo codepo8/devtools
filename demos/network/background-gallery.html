@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background images</title>
     <link rel="stylesheet" href="../assets/modes.css">
+    <link rel="stylesheet" href="../assets/nav.css">
     <link rel="stylesheet" href="../assets/layout.css">
     <style>
+        #gallery {
+            --image-size: 15vw;
+        }
         #gallery {
             list-style: none;
             margin: 0;
             padding: 1em;
             margin-top: 2em;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(var(--image-size), 1fr));
             gap: 20px;
             background: skyblue;
         }
@@ -40,8 +44,8 @@
         }
         #gallery li {
             font-size: 1.3em;
-            height: 20vw; 
-            width: 20vw; 
+            height: calc(var(--image-size) - 2vw); 
+            width: calc(var(--image-size) - 2vw); 
             border-radius: 50% 50%;
             border: 1vw solid white;
         }

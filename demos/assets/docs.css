@@ -73,6 +73,7 @@ section > div {
     padding: 1em;
     flex: 2;
     margin: 0;
+    display: none;
 }
 section a {
         color: #369;
